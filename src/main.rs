@@ -41,7 +41,6 @@ fn main() -> Result<(), PlatformError> {
         checked: Arc::new(Checked::False)
     };
 
-    let _checked = Checked::True;
 
     AppLauncher::with_window(WindowDesc::new(build_ui()).title("Hello World"))
         .launch(data)?;
