@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "wayou.vscode-todo-highlight",
+        "serayuzgur.crates",
+        "rust-lang.rust-analyzer"
+    ]
+}
