@@ -52,7 +52,7 @@ fn main() -> Result<(), PlatformError> {
 fn build_ui() -> impl Widget<ApplicationData> {
     
     let background: BackgroundBrush<ApplicationData> = BackgroundBrush::Color(Color::grey(0.7));
-    let radio_group = RadioGroup::column(vec!(("Hello World", ApplicationData {checked: Arc::new(Checked::False)}), ("Hello World2", ApplicationData {checked: Arc::new(Checked::True)})));
+    let radio_group = RadioGroup::column(vec![("Hello World", ApplicationData {checked: Arc::new(Checked::False)}), ("Hello World2", ApplicationData {checked: Arc::new(Checked::True)})]);
 
     // TODO: Get _checkboxes into the Flex layout.
     let _checkboxes: Checkbox = Checkbox::new("Hello World");
