@@ -1,7 +1,7 @@
 use std::sync::Arc;
 
 use druid::{PlatformError, Widget, widget::{
-    Flex, RadioGroup, BackgroundBrush, Checkbox
+    Flex, RadioGroup, BackgroundBrush, Checkbox, Label
 }, AppLauncher, WindowDesc, Data, Color, WidgetExt};
 
 #[derive(Data, Clone, PartialEq)]
@@ -58,5 +58,6 @@ fn build_ui() -> impl Widget<ApplicationData> {
 
     Flex::column()
         .with_child(radio_group)
+        .with_child(Label::new("Hello"))
         .background(background)
 }
